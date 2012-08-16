@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Contact Manager - Backbone app</title>
+
+    <!--     Styles     -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--  Templates   -->
+    <script id="contact-template" type="text/x-handlebars-template">
+      <img src="{{photo}}" alt="{{name}}" />
+      <h1>{{name}}<span>{{type}}</span></h1>
+      <div>{{address}}</div>
+      <dl>
+          <dt>Tel:</dt><dd>{{tel}}</dd>
+          <dt>Email:</dt><dd><a href="mailto:{{email}}">{{email}}</a></dd>
+      </dl>
+    </script>
+    
+  </head>
+  <body>
+    
+    <div id="contacts">
+    </div>
+    
+    <!-- Javascript   -->
+    <script src="js/lib/jquery-1.7.2.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/lib/handlebars-1.0.0.beta.6.js"></script>
+    <script src="js/lib/backbone.js"></script>
+    <script src="js/app/app.js"></script>
+  </body>
+</html>
